@@ -1,15 +1,43 @@
 /* Gambar pertama */
-.pict {
+.img-2 {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 50; /* nilai z-index lebih rendah dari gambar kedua */
+  top: 50;
+  left: 10;
+  z-index: 0; /* nilai z-index lebih rendah dari gambar kedua */
 }
 
 /* Gambar kedua */
-.img-2 {
+.pict {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2; /* nilai z-index lebih tinggi dari gambar pertama */
+  top: 10%;
+  left: 9%;
+  z-index: 52; /* nilai z-index lebih tinggi dari gambar pertama */
+  width: 300px;
+  height: 300px;
+}
+.footer {
+  background: #1a1d2b;
+  color: white;
+  padding-top: 10px;
+}
+.bawah {
+  padding: 20px;
+}
+.bawah a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling .pict for screens smaller than 768px */
+@media (max-width: 768px) {
+  .pict {
+    top: 12%; /* Change the top position */
+    left: 5%; /* Change the left position */
+    width: 30%;
+    height: auto;
+  }
+  #beranda2 {
+    font-size: 12px;
+    text-align: right;
+  }
 }
